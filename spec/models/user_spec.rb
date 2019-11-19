@@ -19,5 +19,8 @@ RSpec.describe User, type: :model do
       expect(user.name).to be_present
       expect(user.email).to be_present
     end
-  end    
+    it 'should have a password longer than 3 characters' do
+      expect(user.password).not_to be('123')
+    end
+  end
 end
