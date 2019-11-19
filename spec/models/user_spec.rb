@@ -23,4 +23,12 @@ RSpec.describe User, type: :model do
       expect(user.password).not_to be('123')
     end
   end
+  describe '.authenticate_with_credentials' do
+    it 'should still validate an email if there is white space before or after the input' do
+      expect(' beep@boop.com').to match(user.email)
+    end
+    it 'should not have case sensitive email validation' do
+      #expect('Beep@boop.com').to be('beep@boop.com')
+    end
+  end
 end
