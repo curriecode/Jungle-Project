@@ -1,8 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Product, type: :model do
-  # subject { described_class.new(name: "some name", price: 100, quantity: 4, category: "furniture") }
-
   describe 'Validations' do
     it "should have a valid name" do
       @product = Product.new
