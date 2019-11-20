@@ -35,6 +35,6 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Stripe
 
 ## Final Product
- ![ ](#)
-  ![ ](#)
-  ![ ](#)
+ !["View all products"](docs/products-page.png)
+  !["add prodicts to your shopping cart"](docs/my-cart.png)
+  !["View details about your order after payment"](docs/order-complete.png)
